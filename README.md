@@ -40,7 +40,10 @@ singularity version 3.8.6
 ```
 
 # Usage
-To download the repository use: `git clone https://github.com/lumc-sasc/wf-PHAVA.git`
+To download the repository use: 
+```plaintext
+git clone https://github.com/lumc-sasc/wf-PHAVA.git
+```
 
 Running the pipeline can be done by using the `nextflow run main.nf` command *after mandatory parameters have been provided.*
 TBA: add mandatory parameters.
