@@ -1,7 +1,0 @@
-name: goleft_indexsplit
-channels:
-  - conda-forge
-  - bioconda
-  - defaults
-dependencies:
-  - bioconda::goleft=0.2.4

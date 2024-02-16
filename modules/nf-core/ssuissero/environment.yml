@@ -1,7 +1,0 @@
-name: ssuissero
-channels:
-  - conda-forge
-  - bioconda
-  - defaults
-dependencies:
-  - bioconda::ssuissero=1.0.1

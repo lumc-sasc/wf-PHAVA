@@ -1,7 +1,0 @@
-name: paraclu
-channels:
-  - conda-forge
-  - bioconda
-  - defaults
-dependencies:
-  - bioconda::paraclu=10

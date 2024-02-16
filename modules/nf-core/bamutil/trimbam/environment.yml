@@ -1,7 +1,0 @@
-name: bamutil_trimbam
-channels:
-  - conda-forge
-  - bioconda
-  - defaults
-dependencies:
-  - bioconda::bamutil=1.0.15

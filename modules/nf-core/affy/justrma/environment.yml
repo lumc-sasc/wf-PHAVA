@@ -1,7 +1,0 @@
-name: affy_justrma
-channels:
-  - conda-forge
-  - bioconda
-  - defaults
-dependencies:
-  - bioconda::bioconductor-affy=1.78.0

@@ -1,7 +1,0 @@
-name: optitype
-channels:
-  - conda-forge
-  - bioconda
-  - defaults
-dependencies:
-  - bioconda::optitype=1.3.5

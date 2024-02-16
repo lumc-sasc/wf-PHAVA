@@ -1,7 +1,0 @@
-name: simpleaf_quant
-channels:
-  - conda-forge
-  - bioconda
-  - defaults
-dependencies:
-  - bioconda::simpleaf=0.14.1

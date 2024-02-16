@@ -1,7 +1,0 @@
-name: deeptools_plotprofile
-channels:
-  - conda-forge
-  - bioconda
-  - defaults
-dependencies:
-  - bioconda::deeptools=3.5.1

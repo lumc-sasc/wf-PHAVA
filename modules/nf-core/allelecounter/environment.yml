@@ -1,7 +1,0 @@
-name: allelecounter
-channels:
-  - conda-forge
-  - bioconda
-  - defaults
-dependencies:
-  - bioconda::cancerit-allelecount=4.3.0

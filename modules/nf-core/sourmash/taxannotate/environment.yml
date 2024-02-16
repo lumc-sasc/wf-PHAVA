@@ -1,7 +1,0 @@
-name: sourmash_taxannotate
-channels:
-  - conda-forge
-  - bioconda
-  - defaults
-dependencies:
-  - bioconda::sourmash=4.8.4
