@@ -1,7 +1,0 @@
-name: arriba_download
-channels:
-  - conda-forge
-  - bioconda
-  - defaults
-dependencies:
-  - bioconda::arriba=2.4.0

@@ -1,7 +1,0 @@
-name: fq_subsample
-channels:
-  - conda-forge
-  - bioconda
-  - defaults
-dependencies:
-  - bioconda::fq=0.9.1

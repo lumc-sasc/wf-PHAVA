@@ -1,7 +1,0 @@
-name: gem2_gemindexer
-channels:
-  - conda-forge
-  - bioconda
-  - defaults
-dependencies:
-  - bioconda::gem2=20200110

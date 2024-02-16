@@ -1,7 +1,0 @@
-name: shasta
-channels:
-  - conda-forge
-  - bioconda
-  - defaults
-dependencies:
-  - bioconda::shasta=0.8.0

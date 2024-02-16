@@ -1,7 +1,0 @@
-name: methyldackel_mbias
-channels:
-  - conda-forge
-  - bioconda
-  - defaults
-dependencies:
-  - bioconda::methyldackel=0.6.0

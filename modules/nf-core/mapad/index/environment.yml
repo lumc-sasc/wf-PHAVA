@@ -1,7 +1,0 @@
-name: mapad_index
-channels:
-  - conda-forge
-  - bioconda
-  - defaults
-dependencies:
-  - bioconda::mapad=0.41.0

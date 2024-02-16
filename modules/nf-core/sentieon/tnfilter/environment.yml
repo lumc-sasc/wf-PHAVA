@@ -1,7 +1,0 @@
-name: sentieon_tnfilter
-channels:
-  - conda-forge
-  - bioconda
-  - defaults
-dependencies:
-  - bioconda::sentieon=202308.01

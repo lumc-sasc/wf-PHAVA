@@ -1,7 +1,0 @@
-name: gangstr
-channels:
-  - conda-forge
-  - bioconda
-  - defaults
-dependencies:
-  - bioconda::gangstr=2.5.0
