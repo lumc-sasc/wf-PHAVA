@@ -1,7 +1,0 @@
-name: mindagap_mindagap
-channels:
-  - conda-forge
-  - bioconda
-  - defaults
-dependencies:
-  - bioconda::mindagap=0.0.2

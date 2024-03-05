@@ -1,7 +1,0 @@
-name: macrel_contigs
-channels:
-  - conda-forge
-  - bioconda
-  - defaults
-dependencies:
-  - bioconda::macrel=1.2.0

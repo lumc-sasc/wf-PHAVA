@@ -1,7 +1,0 @@
-name: islandpath
-channels:
-  - conda-forge
-  - bioconda
-  - defaults
-dependencies:
-  - bioconda::islandpath=1.0.6

@@ -1,7 +1,0 @@
-name: falco
-channels:
-  - conda-forge
-  - bioconda
-  - defaults
-dependencies:
-  - bioconda::falco=1.2.1

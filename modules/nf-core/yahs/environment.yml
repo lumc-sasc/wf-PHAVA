@@ -1,7 +1,0 @@
-name: yahs
-channels:
-  - conda-forge
-  - bioconda
-  - defaults
-dependencies:
-  - bioconda::yahs=1.2a.2

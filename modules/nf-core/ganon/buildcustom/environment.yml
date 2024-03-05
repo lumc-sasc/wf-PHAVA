@@ -1,7 +1,0 @@
-name: ganon_buildcustom
-channels:
-  - conda-forge
-  - bioconda
-  - defaults
-dependencies:
-  - bioconda::ganon=1.5.1

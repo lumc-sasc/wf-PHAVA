@@ -1,7 +1,0 @@
-name: sgdemux
-channels:
-  - conda-forge
-  - bioconda
-  - defaults
-dependencies:
-  - bioconda::sgdemux=1.1.1

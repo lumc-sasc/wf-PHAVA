@@ -1,0 +1,6 @@
+.nextflow*
+work/
+inputfiles
+config/parameters.config
+backup
+modules/local/linked_adapaters.nf

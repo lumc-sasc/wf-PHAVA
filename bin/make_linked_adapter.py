@@ -15,12 +15,10 @@ def fwd_rev_to_linked_adapter(fwd_primer, rev_primer):
     return linked_adapter_1, linked_adapter_2
 
 if __name__ == '__main__':
-    f_p="ATCG"
-    r_p="GTAC"
+    f_p="CTAG"
+    r_p="GAGT"
     linked_adapter_1, linked_adapter_2 = fwd_rev_to_linked_adapter(f_p, r_p)
-    #adapter_file = open ("fwd_rev_primer.txt", "w")
-    #adapter_file.write(linked_adapter)
-    #adapter_file.close()
+   
     print(linked_adapter_1, linked_adapter_2 )
     
     

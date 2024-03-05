@@ -1,7 +1,0 @@
-name: last_split
-channels:
-  - conda-forge
-  - bioconda
-  - defaults
-dependencies:
-  - bioconda::last=1453

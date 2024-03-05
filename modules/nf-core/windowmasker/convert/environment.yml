@@ -1,7 +1,0 @@
-name: windowmasker_convert
-channels:
-  - conda-forge
-  - bioconda
-  - defaults
-dependencies:
-  - bioconda::blast=2.13.0
