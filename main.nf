@@ -9,9 +9,6 @@ nextflow.enable.dsl=2
     include {DEEPVARIANT as DeepVariant} from "./modules/nf-core/deepvariant/main.nf"
     include {WHATSHAP as WhatsHap} from "./modules/local/whatshap.nf"
     include {SAMTOOLS_INDEX as Samtools_Index} from "./modules/nf-core/samtools/index/main.nf"
-    include {GUNZIP as Gunzip_cutadapt_1} from "./modules/nf-core/gunzip/main.nf" 
-    include {GUNZIP as Gunzip_cutadapt_2} from "./modules/nf-core/gunzip/main.nf"
-    include {GUNZIP as Gunzip_deepvariant} from "./modules/nf-core/gunzip/main.nf"
     include {BEDTOOLS_BAMTOBED as Bedtools_minimap2} from "./modules/nf-core/bedtools/bamtobed/main.nf"
     include {CSV_READ as Csv_Read} from "./lib/csv_reader.nf"
     include {COMBINE_CUTADAPT as Cutadapt} from "./modules/local/combine_cutadapt.nf"
@@ -44,14 +41,8 @@ workflow {
     //trimming adapters seconnd run
     Cutadapt_2(Channel.fromList(read_list))
 
-    //unzipping first trimming
-    Gunzip_cutadapt_1(Cutadapt_1.out.reads)
-
-    //unzipping first trimming
-    Gunzip_cutadapt_2(Cutadapt_2.out.reads)
-
     //combining cutadapt output
-    Cutadapt(Gunzip_cutadapt_1.out.gunzip.join(Gunzip_cutadapt_2.out.gunzip))
+    Cutadapt(Cutadapt_1.out.reads.join(Cutadapt_2.out.reads))
 
     //quality control with trimmed reads
     FastQC(Cutadapt.out.combined_fastq)
@@ -67,12 +58,9 @@ workflow {
 
     //run the variantcalling with deepvariant
     DeepVariant(MiniMap2.out.bam.join(Samtools_Index.out.bai).join(Bedtools_minimap2.out.bed), referenceFasta, referenceFastaFai, [[],[]])
-    
-    //decompress the output vcf file of deepvariant
-    Gunzip_deepvariant(DeepVariant.out.vcf)
 
     //phase the ouput of deepvariant with self written program
-    WhatsHap(MiniMap2.out.bam.join(Samtools_Index.out.bai) ,referenceFasta, referenceFastaFai, Gunzip_deepvariant.out.gunzip)
+    WhatsHap(MiniMap2.out.bam.join(Samtools_Index.out.bai) ,referenceFasta, referenceFastaFai, DeepVariant.out.vcf)
 
     //run multiqc with the output of fastqc to get a total report of all the different samples
     MultiQc(FastQC.out.zip.map{it[1]}.collect(), [], [], [])

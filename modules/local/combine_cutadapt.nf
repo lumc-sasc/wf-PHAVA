@@ -10,7 +10,8 @@ process COMBINE_CUTADAPT {
     prefix = task.ext.prefix ?: "${meta.id}" 
     
     """
-    cat ${fastq_1} ${fastq_2}  > ${prefix}_combined_trimmed.fq 
+    cat ${fastq_1} ${fastq_2}  > ${prefix}_combined_trimmed.fq.gz
+    gunzip ${prefix}_combined_trimmed.fq.gz
     """
 
 }
