@@ -14,7 +14,7 @@ process WHATSHAP {
     prefix = task.ext.prefix ?: "${meta.id}" 
     
     """
-    whatshap phase $args-o ${prefix}.phased.vcf --reference=$reference $vcf $reads
+    whatshap phase $args -o ${prefix}.phased.vcf --reference=$reference $vcf $reads
     """
 
 }
