@@ -1,8 +1,8 @@
 # wf-PHAVA
 Nextflow pipeline for Pacbio Hifi Amplicon Variantcalling Analysis(PHAVA)
 
-# Pipeline
-Workflow overview.
+# Pipeline overview
+
 
 # Requirements
 Nextflow (>23.04.4) and Singularity are required to run this pipeline. Both can be installed using Conda. To download Conda, follow this [tutorial](https://docs.conda.io/projects/conda/en/latest/user-guide/install/linux.html). Check that Conda is up-to-date:
@@ -45,11 +45,6 @@ To download the repository use:
 git clone https://github.com/lumc-sasc/wf-PHAVA.git
 ```
 
-Running the pipeline can be done by using the `nextflow run main.nf` command *after mandatory parameters have been provided.*
-TBA: add mandatory parameters.
-
-# Future work
-This project is currently ongoing.
 
 # Authors
 This pipeline was originally made by Youp Zegers ([@youpze](https://github.com/youpze)) for his BSc internship in Bioinformatics. The pipeline uses modules from [nf-core](https://github.com/nf-core/modules) in addition to local modules.
