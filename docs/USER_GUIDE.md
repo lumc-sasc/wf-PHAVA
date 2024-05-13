@@ -2,6 +2,7 @@
 Nextflow pipeline for Pacbio Hifi Amplicon Variantcalling Analysis(PHAVA)
 
 # Pipeline overview
+![Pipeline overview](https://github.com/lumc-sasc/wf-PHAVA/blob/main/docs/Opzet_pipeline_algemeen.drawio.png)
 
 
 # Requirements
