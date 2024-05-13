@@ -1,5 +1,6 @@
 # wf-PHAVA
 Nextflow pipeline for Pacbio Hifi Amplicon Variantcalling Analysis(PHAVA). PHAVA is designed to call variants in "dark" parts of the genome using PacBio Hifi amplicon data. 
+For PHAVA nf-core modelus are used to incoperate tools into the pipeline. The used modules of nf-core are part of the repository, but can also be found here:[nf-core modelules](https://nf-co.re/modules).
 
 # Pipeline overview
 ![Pipeline overview](https://github.com/lumc-sasc/wf-PHAVA/blob/main/docs/Opzet_pipeline_algemeen.drawio.png)
@@ -44,6 +45,7 @@ Check the version of the programs to confirm you have a decently up-to-date prog
 singularity version 3.8.6
 ```
 
+
 # Downloading repository
 To download the repository use: 
 ```plaintext
@@ -75,12 +77,12 @@ Additionally, extra settings per process can be added in the [task.config](https
 # Executing tool
 To execute the Nextflow pipeline the following command is used:
 
-'nextflow run main.nf'
+`nextflow run main.nf`
 
 To resume the pipeline the following command is used:
 
-'nextflow run main.nf -resume'
+`nextflow run main.nf -resume`
 
 
 # Authors
-This pipeline was originally made by Youp Zegers ([@youpze](https://github.com/youpze)) for his BSc internship in Bioinformatics. The pipeline uses modules from [nf-core](https://github.com/nf-core/modules) in addition to local modules.
+This pipeline was originally made by Youp Zegers ([@youpze](https://github.com/youpze)) for his BSc internship in Bioinformatics.
