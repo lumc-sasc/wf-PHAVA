@@ -12,7 +12,6 @@ nextflow.enable.dsl=2
     include {BEDTOOLS_BAMTOBED as Bedtools_minimap2} from "./modules/nf-core/bedtools/bamtobed/main.nf"
     include {CSV_READ as Csv_Read} from "./lib/csv_reader.nf"
     include {COMBINE_CUTADAPT as Cutadapt} from "./modules/local/combine_cutadapt.nf"
-    include {LINKED_ADAPERS as Linked_Adapters} from "./modules/local/linked_adapters.nf"
   
 
 //"input output defining"------------------------------------------------------------------------------------------ 
