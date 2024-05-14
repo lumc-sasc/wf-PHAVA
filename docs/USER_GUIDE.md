@@ -1,6 +1,6 @@
 # Nextflow pipeline for Pacbio Hifi Amplicon Variant calling Analysis (PHAVA)
 PHAVA is designed to call variants in "dark" parts of the genome using PacBio Hifi amplicon data. 
-For PHAVA, nf-core models are used to incorporate tools into the pipeline. The used modules of nf-core are part of the repository, but can also be found here: [nf-core modelules](https://nf-co.re/modules).
+PHAVA uses nf-core models to incorporate tools into the pipeline. The used modules of nf-core are part of the repository, but can also be found here: [nf-core modelules](https://nf-co.re/modules).
 
 ## Pipeline Overview
 ![Pipeline Overview](https://github.com/lumc-sasc/wf-PHAVA/blob/main/docs/Opzet_pipeline_algemeen.drawio.png)
