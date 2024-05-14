@@ -67,8 +67,8 @@ The rest of the mandatory parameters consist of only a path:
 
 ```plaintext
 outdir = "outdir"
-referenceFasta ="genome.fasta"
-referenceFastaFai ="genome.fasta.fai"
+referenceFasta = "genome.fasta"
+referenceFastaFai = "genome.fasta.fai"
 ```
 Additionally, extra settings per process can be added in the [task.config](https://github.com/lumc-sasc/wf-PHAVA/blob/main/config/task.config) file. The extra settings can be added to the `ext.args` variable per process. Furthermore, standard settings like memory or CPUs can be added per process. 
 
