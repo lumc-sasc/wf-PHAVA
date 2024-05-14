@@ -2,7 +2,7 @@
 Nextflow pipeline for Pacbio Hifi Amplicon Variantcalling Analysis(PHAVA). 
 
 # Userguide
-[USERGUIDE](https://github.com/lumc-sasc/wf-PHAVA/blob/main/docs/USER_GUIDE.md) <br/>
+Instructions on usage can be found in the [userguide](https://github.com/lumc-sasc/wf-PHAVA/blob/main/docs/USER_GUIDE.md).
 
 
 # About 
