@@ -6,7 +6,7 @@ PHAVA uses nf-core models to incorporate tools into the pipeline. The used modul
 ![Pipeline Overview](https://github.com/lumc-sasc/wf-PHAVA/blob/main/docs/Opzet_pipeline_algemeen.drawio.png)
 
 # Requirements
-Nextflow (23.10.1) and Singularity (3.8.6) are required to run this pipeline. Both can be installed using Conda. To download Conda, follow this [tutorial](https://docs.conda.io/projects/conda/en/latest/user-guide/install/linux.html). Check that Conda is up-to-date.
+Nextflow (>= 23.10.1) and Singularity (3.8.6) are used to run this pipeline. Both can be installed using Conda. To download Conda, follow this [tutorial](https://docs.conda.io/projects/conda/en/latest/user-guide/install/linux.html). Check that Conda is up-to-date.
 
 `conda --version`
 
