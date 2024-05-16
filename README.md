@@ -1,3 +1,8 @@
+
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.11202810.svg)](https://doi.org/10.5281/zenodo.11202810)
+
+
 # wf-PHAVA
 Nextflow pipeline for Pacbio Hifi Amplicon Variantcalling Analysis(PHAVA). 
 
