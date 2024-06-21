@@ -55,7 +55,7 @@ The [parameters.config](https://github.com/lumc-sasc/wf-PHAVA/blob/main/config/p
 
 Linked adapters are required to run the pipeline. The Python tool [make_linked_adapters.py](https://github.com/lumc-sasc/wf-PHAVA/blob/main/bin/make_linked_adapter.py) can be used to make the linked adapters. In the main, the forward primer (f_p) and reverse primer (r_p) can be specified. Running the main function will print two linked adapters, which can be used for the linked_adapter_1 and linked_adapter_2 mandatory inputs. The order doesn't matter.
 
-The CSV file contains three columns: gene name, sample ID, and path to the file. Per gene, multiple samples can be specified, as presented below:
+The CSV file contains three columns: gene name, sample ID, and path to the file. Per gene, multiple samples can be specified, as seen in the {example csv file](https://github.com/lumc-sasc/wf-PHAVA/blob/main/docs/sample_example.csv), or as presented below:
 
 ```plaintext
 GENE_NAME,SAMPLE_ID,PATH
