@@ -1,0 +1,4 @@
+GENE_NAME,SAMPLE_ID,PATH
+TEST1,D12345,/path/to/file/pacbio_hifi_reads.fq
+TEST1,D23456,/path/to/file/pacbio_hifi_reads.fq
+TEST1,D34567,/path/to/file/pacbio_hifi_reads.fq
